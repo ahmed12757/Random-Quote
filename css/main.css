@@ -1,0 +1,43 @@
+body{
+
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #E9EFEC;
+}
+
+div div .inner h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation: words 1s linear;
+}
+div div .inner p{
+animation: words 1s linear;
+
+}
+.inner{
+    width: 95%;
+    /* height: 75% !important; */
+    background-color: #C4DAD2;
+    box-shadow: 0 0 100px 13px #00000042;
+}
+button{
+    background-color: #6A9C89 !important;
+    animation: button 1s linear;
+    &:hover{
+        background-color: #16423C !important;
+    }
+}
+@keyframes words {
+    from{
+        transform: translate(-250%);
+    }
+    to{
+        transform: translate(0);
+    }
+}
+@keyframes button {
+    from{
+        transform: translate(0 ,-1000%);
+    }
+    to{
+        transform: translate(0 ,0);
+    }
+}
